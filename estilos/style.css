@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+:root{
+    --fundo-pagina: #030712;
+    --fundo-cartao: #0f172a;
+    --destaque: #2563eb;
+    --texto-principal: #f8fafc;
+    --texto-secundario: #93c5fd;
+    --botao-hover: #1d4ed8;
+
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-profissao: 'Fira Code', monospace;
+    --fonte-corpo: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+    font-family: var(--fonte-corpo);
+    /* position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0; */
+    margin: auto;
+    margin-top: 100px;    
+} 
+
+main{
+    margin: auto;
+    max-width: 350px;
+    min-width: 250px;
+    background-color: var(--fundo-cartao);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px #1e3a8a;
+    text-align: center;
+}
+
+main > h1 {
+    font-family: var(--fonte-principal);
+    margin-top: 20px;    
+    margin-bottom: 8px;
+}
+
+main > h2{
+    font-family: var(--fonte-principal);
+    margin-bottom: 8px;
+}
+
+main > p {
+    font-family: var(--fonte-profissao);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+
+ul > li{
+    list-style: none;
+}
+
+
+a{
+    color: var(--texto-secundario);
+    background-color: var(--destaque);
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+a:hover{
+    background-color: var(--botao-hover);
+}
